@@ -15,6 +15,7 @@ namespace StackAndQueue
             Console.WriteLine("\nEnter your choice : ");
             int ch = Convert.ToInt32(Console.ReadLine());
             Stack<int> stack = new Stack<int>(); //creating a object of Stack generic class 
+            Queue<int> queue = new Queue<int>(); //creating a object of Queue generic class 
             switch (ch)
             {
                 case 1:
@@ -32,6 +33,12 @@ namespace StackAndQueue
                     stack.PushByLinkedList(30); // Calling method of Stack generic class to push 70 element in stack
                     stack.PushByLinkedList(56); // Calling method of Stack generic class to push 70 element in stack
                     stack.DisplayByLinkedList(); // Calling method of Stack generic class to display all element in stack
+                    break;
+                case 3:
+                    queue.Enqueue(56); // Calling method of Queue generic class to enqueue 56 element in Queue
+                    queue.Enqueue(30); // Calling method of Queue generic class to enqueue 56 element in Queue
+                    queue.Enqueue(70); // Calling method of Queue generic class to enqueue 56 element in Queue
+                    queue.Display(); // Calling method of Queue generic class to display all element in Queue                    
                     break;
                 default:
                     Console.WriteLine("Enter valid choice");
