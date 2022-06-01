@@ -23,6 +23,9 @@ namespace StackAndQueue
                     stack.Push(56);// Calling method of Stack generic class to push 56 element in stack
                     stack.Display(); // Calling method of Stack generic class to display all element in stack
                     stack.Display(); // Calling method of Stack generic class to display all element in stack
+                    stack.Peek(); // Calling method of Stack generic class to peek top most element of stack
+                    stack.Pop(); // Calling method of Stack generic class to delete top most element of stack
+                    Console.WriteLine("\nIs stack empty :: " + stack.isEmpty());
                     break;
                 case 2:
                     stack.PushByLinkedList(70); // Calling method of Stack generic class to push 70 element in stack
