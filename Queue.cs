@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 namespace StackAndQueue
 {
     internal class Queue<T>
@@ -29,6 +33,18 @@ namespace StackAndQueue
             }
             Console.WriteLine($"Size of Queue is : {count}");
         }
+        public void Dequeue() // creating a method to Dequeue all Element in queue using Linked List
+        {
+            this.top = list.top; // Storing Linked list head to top variable
+            while (this.top != null) // If top is not null then print one by one element of queue
+            {
+                Console.WriteLine($"\nNow deleting first element of queue {top.data} ....");
+                list.DeleteAtFirst(); // Calling method og Linked list class to dequeue first element
+                Display();
+                this.top = list.top;
+            }
+        }
     }
+
 
 }
